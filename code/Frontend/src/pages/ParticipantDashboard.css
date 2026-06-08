@@ -1,0 +1,45 @@
+.participant-dashboard {
+  position: relative;
+  padding: 60px;
+  min-height: 100vh;
+  color: white;
+  font-family: "Lexend", sans-serif;
+}
+
+/* Background video */
+.participant-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Dark overlay */
+.participant-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: -1;
+}
+
+/* Cards */
+.participant-card {
+  max-width: 400px;
+  margin: 60px auto 0;
+  backdrop-filter: blur(18px);
+  background: rgba(255,255,255,0.12);
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.participant-card h3{
+  color: rgb(0, 0, 0);
+  margin-bottom: 12px;
+}

@@ -1,0 +1,149 @@
+/* PAGE WRAPPER */
+.event-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: "Lexend", sans-serif;
+  color: white;
+}
+
+/* BACKGROUND VIDEO */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* OVERLAY */
+.event-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: -1;
+}
+
+/* CARD */
+.auth-card {
+  max-width: 400px;
+  width: 100%;
+  padding: 35px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+/* TITLE */
+.auth-card .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  color: black; 
+  outline: none;
+}
+
+.auth-card input::placeholder {
+  color: rgba(0,0,0,0.5); 
+}
+
+/* BUTTON */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #44c4d4;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card button:disabled {
+  background: rgba(68,196,212,0.6);
+  cursor: not-allowed;
+}
+
+.auth-card button:hover:not(:disabled) {
+  background: #5be7f5;
+}
+
+
+
+/* ---------- Tablets (max 992px) ---------- */
+@media (max-width: 992px) {
+
+  .auth-card {
+    max-width: 420px !important;
+    padding: 28px !important;
+    border-radius: 14px !important;
+    margin-top: 50px !important;
+  }
+
+  .auth-card .title {
+    font-size: 22px !important;
+  }
+
+  .auth-card input {
+    padding: 11px !important;
+    font-size: 15px !important;
+  }
+
+  .auth-card button {
+    padding: 11px !important;
+    font-size: 15px !important;
+  }
+}
+
+
+/* ---------- Mobile (max 576px) ---------- */
+@media (max-width: 576px) {
+
+  .event-page {
+    padding: 18px !important;
+  }
+
+  .auth-card {
+    max-width: 100% !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    margin-top: 50px !important;
+  }
+
+  .auth-card .title {
+    font-size: 11px !important;
+  }
+
+  .auth-card input {
+    padding: 9px !important;
+    font-size: 14px !important;
+  }
+
+  .auth-card button {
+    padding: 9px !important;
+    font-size: 14px !important;
+  }
+}

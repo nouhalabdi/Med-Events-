@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+.auth-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+/* Background */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.auth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2) !important;
+  z-index: -1;
+}
+
+/* Card */
+.auth-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Inputs */
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #122f38;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #5de3f5 !important;
+}
+
+/* Links */
+.switch-link {
+  text-align: center;
+  margin-top: 15px;
+}
+/* Success message */
+.message.success {
+  background: rgba(0, 255, 120, 0.2);
+  border: 1px solid rgba(0, 255, 120, 0.5);
+  color: #9fffbf;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+}
+
+/* Error message */
+.message.error {
+  background: rgba(255, 60, 60, 0.25);
+  border: 1px solid rgba(255, 60, 60, 0.5);
+  color: #ffc7c7;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+}
+
+
+

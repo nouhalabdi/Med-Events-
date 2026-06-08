@@ -1,0 +1,36 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.db
+*.sqlite3
+venv/
+env/
+.env
+
+# Uploads and media
+uploads/
+media/
+staticfiles/
+
+# Node / Frontend
+node_modules/
+.vite/
+dist/
+build/
+*.log
+
+# Large files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.pptx
+*.ppt
+*.pdf
+*.zip
+*.rar
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
