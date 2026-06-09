@@ -39,7 +39,7 @@ login_manager.init_app(app)
 CORS(
     app,
     origins=["http://localhost:5173",
-             "https://med-events-1.onrender.com"],
+             "https://med-events-2.onrender.com"],
     supports_credentials=True,
     methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["Content-Type", "Authorization"]
