@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = 'aef72057d1f7493705dfcf3692802e86'
 DATABASE_URL = os.environ.get('DATABASE_URL')
 if DATABASE_URL:
     # استخدام PostgreSQL على Render
-    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+    app.config['postgresql://med_events_db_user:ChCpFuvMyEzZJkOazaldZlXdvZT6QnJL@dpg-d8k09tbbc2fs73a5fep0-a/med_events_db'] = DATABASE_URL
 else:
     # استخدام SQLite محلياً
     BASE_DIR = os.path.abspath(os.path.dirname(__file__))
